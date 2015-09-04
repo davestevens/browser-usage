@@ -13,7 +13,9 @@
   "author": "Dave Stevens",
   "license": "MIT",
   "devDependencies": {
+    "bootstrap-sass": "^3.3.5",
     "browserify": "^11.0.1",
+    "browserify-shim": "^3.8.10",
     "cheerio": "^0.19.0",
     "coffee-script": "^1.9.3",
     "coffeeify": "^1.1.0",
@@ -31,5 +33,22 @@
     "jade": "^1.11.0",
     "request": "^2.61.0",
     "underscore": "^1.8.3"
+  },
+  "dependencies": {
+    "chart.js": "nnnick/Chart.js",
+    "jquery": "^2.1.4"
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js",
+    "underscore": "./node_modules/underscore/underscore.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "underscore": "_"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
   }
 }

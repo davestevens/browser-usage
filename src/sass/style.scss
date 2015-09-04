@@ -1,0 +1,15 @@
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+  margin-top: $navbar-height;
+}
+
+.badge {
+  &--current {
+    background-color: $brand-primary;
+  }
+
+  &--default {
+    background-color: $brand-info;
+  }
+}
