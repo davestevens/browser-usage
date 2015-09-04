@@ -1,0 +1,32 @@
+{
+  "production": {
+    "sass": {
+      "outputStyle": "compressed",
+      "sassDir": "src/sass/",
+      "cssDir": "web/css/",
+      "sourcemap": false
+    },
+    "jade": {
+      "pretty": false,
+      "debug": false
+    },
+    "coffeeify": {
+      "debug": false
+    }
+  },
+  "development": {
+    "sass": {
+      "outputStyle": "nested",
+      "sassDir": "src/sass/",
+      "cssDir": "web/css/",
+      "sourcemap": true
+    },
+    "jade": {
+      "pretty": true,
+      "debug": false
+    },
+    "coffeeify": {
+      "debug": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "browser-usage",
+  "version": "0.1.0",
+  "description": "Interactive current Browser Usage data for investigating the browsers we should be supporting",
+  "scripts": {
+    "start": "http-server web",
+    "clean": "gulp clear:web",
+    "export": "gulp export",
+    "build": "gulp build",
+    "watch": "gulp"
+  },
+  "author": "Dave Stevens",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "coffee-script": "^1.9.3",
+    "coffeeify": "^1.1.0",
+    "del": "^2.0.0",
+    "gulp": "^3.9.0",
+    "gulp-coffee": "^2.3.1",
+    "gulp-coffeeify": "^0.1.8",
+    "gulp-jade": "^1.1.0",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-util": "^3.0.6",
+    "gulp-zip": "^3.0.2",
+    "http-server": "^0.8.0",
+    "jade": "^1.11.0"
+  }
+}

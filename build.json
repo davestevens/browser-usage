@@ -1,0 +1,8 @@
+{
+  "baseUrl": "web/js",
+  "paths": {
+  },
+  "name": "main",
+  "out": "app.js",
+  "optimize": "none"
+}
