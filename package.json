@@ -10,6 +10,10 @@
     "watch": "gulp",
     "fetch-data": "coffee fetch-data.coffee -n"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:davestevens/browser-usage.git"
+  },
   "author": "Dave Stevens",
   "license": "MIT",
   "devDependencies": {
