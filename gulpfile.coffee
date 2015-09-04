@@ -4,7 +4,7 @@ jade = require("gulp-jade")
 sass = require("gulp-sass")
 coffeeify = require("gulp-coffeeify")
 del = require("del")
-run_sequence = require("gulp-run-sequence")
+run_sequence = require("run-sequence")
 zip = require("gulp-zip")
 
 log_error = (error) ->
@@ -60,10 +60,6 @@ gulp.task("watch", ->
   gulp.watch("src/images/**/*", ["copy:images"])
 )
 
-gulp.task("clear:web", ->
-  del("web/*")
-)
-
 gulp.task("package", ->
   gulp.src("web/**/*", base: ".")
     .pipe(zip("export.zip"))
@@ -73,6 +69,11 @@ gulp.task("package", ->
 gulp.task("development", -> config = options.development)
 gulp.task("production", -> config = options.production)
 
+gulp.task("clear:web", ->
+  del("web/*")
+)
+
+gulp.task("clean", ["clear:web"])
 gulp.task("build", [
   "production",
   "html",
@@ -81,7 +82,8 @@ gulp.task("build", [
   "copy:fonts",
   "copy:images"
 ])
-gulp.task("export", run_sequence(
+gulp.task("export", ->
+  run_sequence(
     "production",
     "clear:web",
     "build"
