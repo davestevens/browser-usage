@@ -1,29 +1,20 @@
 ChartJS = require("chart.js")
 _ = require("underscore")
+colours = require("./colours")
 
 class Chart
-  colors: [
-    "#5DA5DA",
-    "#FAA43A",
-    "#60BD68",
-    "#F17CB0",
-    "#B2912F",
-    "#B276B2",
-    "#DECF3F",
-    "#F15854",
-    "#4D4D4D"
-  ]
-
   constructor: (options = {}) ->
     @$el = options.$el
     @browsers = options.browsers || []
-    @precision = options.precision || 3
+    @precision = options.precision || 2
 
   render: ->
     context = @$el[0].getContext("2d")
-    data = _.sortBy(@_build_data(), (datum) -> -parseFloat(datum.value))
-    data.push(@_include_unknown(data))
-    @chart = new ChartJS(context).Pie(data)
+    @chart = new ChartJS(context).Pie(@_build_data(), {
+      segmentStrokeWidth: 0.5
+      animateScale: true
+      animateRotate: true
+    })
 
   _include_unknown: (data) ->
     unknown = _.chain(data)
@@ -36,16 +27,17 @@ class Chart
     color: "#000000"
 
   _build_data: ->
-    _.map(@browsers, (browser, index) =>
-      value: @_total_percentage(browser.versions).toFixed(@precision)
-      label: browser.name
-      color: @colors[index % @colors.length]
+    browsers = []
+    _.each(@browsers, (browser, index) =>
+      _.each(browser.versions, (version) =>
+        browsers.push(
+          value: version.percentage.toFixed(@precision)
+          label: "#{browser.name} - #{version.label}"
+          color: colours.get(index)
+        )
+      )
     )
-
-  _total_percentage: (versions) ->
-    _.chain(versions)
-      .pluck("percentage")
-      .reduce(((memo, number) -> memo + number), 0)
-      .value()
+    browsers.push(@_include_unknown(browsers))
+    browsers
 
 module.exports = Chart

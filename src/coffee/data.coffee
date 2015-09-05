@@ -13,8 +13,10 @@ class Data
   _format: ->
     @data = _.map(@data, (datum) =>
       datum.versions = @_combine_versions(datum.versions)
+      datum.percentage = @_total_percentage(datum.versions)
       datum
     )
+    @data = _.sortBy(@data, (datum) -> -parseFloat(datum.percentage))
 
   _combine_versions: (versions) ->
     combined_versions = []
@@ -28,5 +30,11 @@ class Data
     )
     combined_versions.push(combined_version.build())
     _.pick(combined_versions, _.identity)
+
+  _total_percentage: (versions) ->
+    _.chain(versions)
+      .pluck("percentage")
+      .reduce(((memo, number) -> memo + number), 0)
+      .value()
 
 module.exports = Data
