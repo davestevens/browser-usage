@@ -1,12 +1,11 @@
 $ = require("jquery")
-data = require("./data.json")
+Data = require("./data.coffee")
+data = new Data(data: require("./data.json"), threshold: 1)
 
 Browsers = require("./browsers")
 $browsers = $(".js-browsers")
-$browsers.append(new Browsers(browsers: data.desktop).render())
-$browsers.append(new Browsers(browsers: data.mobile).render())
+new Browsers($el: $browsers, browsers: data.all()).render()
 
 Chart = require("./chart")
 $chart = $(".js-chart")
-all_browsers = data.desktop.concat(data.mobile)
-new Chart($el: $chart, browsers: all_browsers).render()
+new Chart($el: $chart, browsers: data.all()).render()

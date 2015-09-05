@@ -2,11 +2,13 @@ _ = require("underscore")
 
 class Browsers
   constructor: (options = {}) ->
+    @$el = options.$el
     @browsers = options.browsers || []
 
   render: ->
-    $("<ul/>", class: "list-group")
+    @$el.html($("<ul/>", class: "list-group")
       .append(_.map(@browsers, @_render_browser))
+    )
 
   _render_browser: (browser) =>
     $("<li/>", class: "list-group-item", text: browser.name)
@@ -19,7 +21,7 @@ class Browsers
   _render_version: (version) =>
     $("<li/>",
       class: "list-group-item js-browser-version",
-      text: version.version
+      text: version.label
     )
       .append(@_render_usage(version))
 
