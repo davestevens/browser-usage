@@ -1,946 +1,957 @@
-{
-  "desktop": [
-    {
-      "name": "IE",
-      "versions": [
-        {
-          "version": 5.5,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 6,
-          "percentage": 0.07,
-          "current": false
-        },
-        {
-          "version": 7,
-          "percentage": 0.05,
-          "current": false
-        },
-        {
-          "version": 8,
-          "percentage": 1.45,
-          "current": false
-        },
-        {
-          "version": 9,
-          "percentage": 1.14,
-          "current": false
-        },
-        {
-          "version": 10,
-          "percentage": 1.03,
-          "current": false
-        },
-        {
-          "version": 11,
-          "percentage": 6.17,
-          "current": true
-        }
-      ]
-    },
-    {
-      "name": "Edge",
-      "versions": [
-        {
-          "version": 12,
-          "percentage": 0.45,
-          "current": true
-        },
-        {
-          "version": 13,
-          "percentage": 0,
-          "current": false
-        }
-      ]
-    },
-    {
-      "name": "Firefox",
-      "versions": [
-        {
-          "version": 2,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 3,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 3.5,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 3.6,
-          "percentage": 0.04,
-          "current": false
-        },
-        {
-          "version": 4,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 5,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 6,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 7,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 8,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 9,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 10,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 11,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 12,
-          "percentage": 0.04,
-          "current": false
-        },
-        {
-          "version": 13,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 14,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 15,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 16,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 17,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 18,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 19,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 20,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 21,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 22,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 23,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 24,
-          "percentage": 0.04,
-          "current": false
-        },
-        {
-          "version": 25,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 26,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 27,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 28,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 29,
-          "percentage": 0.04,
-          "current": false
-        },
-        {
-          "version": 30,
-          "percentage": 0.09,
-          "current": false
-        },
-        {
-          "version": 31,
-          "percentage": 0.13,
-          "current": false
-        },
-        {
-          "version": 32,
-          "percentage": 0.06,
-          "current": false
-        },
-        {
-          "version": 33,
-          "percentage": 0.07,
-          "current": false
-        },
-        {
-          "version": 34,
-          "percentage": 0.08,
-          "current": false
-        },
-        {
-          "version": 35,
-          "percentage": 0.11,
-          "current": false
-        },
-        {
-          "version": 36,
-          "percentage": 0.11,
-          "current": false
-        },
-        {
-          "version": 37,
-          "percentage": 0.17,
-          "current": false
-        },
-        {
-          "version": 38,
-          "percentage": 0.51,
-          "current": false
-        },
-        {
-          "version": 39,
-          "percentage": 4,
-          "current": false
-        },
-        {
-          "version": 40,
-          "percentage": 3.31,
-          "current": true
-        },
-        {
-          "version": 41,
-          "percentage": 0.13,
-          "current": false
-        },
-        {
-          "version": 42,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 43,
-          "percentage": 0,
-          "current": false
-        }
-      ]
-    },
-    {
-      "name": "Chrome",
-      "versions": [
-        {
-          "version": 4,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 5,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 6,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 7,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 8,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 9,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 10,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 11,
-          "percentage": 0.06,
-          "current": false
-        },
-        {
-          "version": 12,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 13,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 14,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 15,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 16,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 17,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 18,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 19,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 20,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 21,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 22,
-          "percentage": 0.07,
-          "current": false
-        },
-        {
-          "version": 23,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 24,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 25,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 26,
-          "percentage": 0.04,
-          "current": false
-        },
-        {
-          "version": 27,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 28,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 29,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 30,
-          "percentage": 0.04,
-          "current": false
-        },
-        {
-          "version": 31,
-          "percentage": 0.83,
-          "current": false
-        },
-        {
-          "version": 32,
-          "percentage": 0.05,
-          "current": false
-        },
-        {
-          "version": 33,
-          "percentage": 0.13,
-          "current": false
-        },
-        {
-          "version": 34,
-          "percentage": 0.19,
-          "current": false
-        },
-        {
-          "version": 35,
-          "percentage": 0.19,
-          "current": false
-        },
-        {
-          "version": 36,
-          "percentage": 0.16,
-          "current": false
-        },
-        {
-          "version": 37,
-          "percentage": 0.19,
-          "current": false
-        },
-        {
-          "version": 38,
-          "percentage": 0.14,
-          "current": false
-        },
-        {
-          "version": 39,
-          "percentage": 0.28,
-          "current": false
-        },
-        {
-          "version": 40,
-          "percentage": 0.29,
-          "current": false
-        },
-        {
-          "version": 41,
-          "percentage": 0.27,
-          "current": false
-        },
-        {
-          "version": 42,
-          "percentage": 0.5,
-          "current": false
-        },
-        {
-          "version": 43,
-          "percentage": 1.66,
-          "current": false
-        },
-        {
-          "version": 44,
-          "percentage": 24.57,
-          "current": false
-        },
-        {
-          "version": 45,
-          "percentage": 0.15,
-          "current": true
-        },
-        {
-          "version": 46,
-          "percentage": 0.17,
-          "current": false
-        },
-        {
-          "version": 47,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 48,
-          "percentage": 0,
-          "current": false
-        }
-      ]
-    },
-    {
-      "name": "Safari",
-      "versions": [
-        {
-          "version": 3.1,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 3.2,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 4,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 5,
-          "percentage": 0.07,
-          "current": false
-        },
-        {
-          "version": 5.1,
-          "percentage": 0.18,
-          "current": false
-        },
-        {
-          "version": 6,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 6.1,
-          "percentage": 0.15,
-          "current": false
-        },
-        {
-          "version": 7,
-          "percentage": 0.1,
-          "current": false
-        },
-        {
-          "version": 7.1,
-          "percentage": 0.36,
-          "current": false
-        },
-        {
-          "version": 8,
-          "percentage": 1.27,
-          "current": true
-        },
-        {
-          "version": 9,
-          "percentage": 0.02,
-          "current": false
-        }
-      ]
-    },
-    {
-      "name": "Opera",
-      "versions": [
-        {
-          "version": 9,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 9.6,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 10.1,
-          "percentage": 0.04,
-          "current": false
-        },
-        {
-          "version": 10.5,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 10.6,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 11,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 11.1,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 11.5,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 11.6,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 12,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 12.1,
-          "percentage": 0.13,
-          "current": false
-        },
-        {
-          "version": 15,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 16,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 17,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 18,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 19,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 20,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 21,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 22,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 23,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 24,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 25,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 26,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 27,
-          "percentage": 0.01,
-          "current": false
-        },
-        {
-          "version": 28,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 29,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 30,
-          "percentage": 0.18,
-          "current": false
-        },
-        {
-          "version": 31,
-          "percentage": 0.5,
-          "current": true
-        },
-        {
-          "version": 32,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 33,
-          "percentage": 0,
-          "current": false
-        }
-      ]
-    }
-  ],
-  "mobile": [
-    {
-      "name": "iOS Safari",
-      "versions": [
-        {
-          "version": 3.2,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 4.1,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 4.3,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 5.1,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 6.1,
-          "percentage": 0.04,
-          "current": false
-        },
-        {
-          "version": 7.1,
-          "percentage": 0.65,
-          "current": false
-        },
-        {
-          "version": 8,
-          "percentage": 0.09,
-          "current": false
-        },
-        {
-          "version": 8.4,
-          "percentage": 6.99,
-          "current": true
-        },
-        {
-          "version": 9,
-          "percentage": 0.05,
-          "current": false
-        }
-      ]
-    },
-    {
-      "name": "Opera Mini",
-      "versions": [
-        {
-          "version": 8,
-          "percentage": 5.37,
-          "current": true
-        }
-      ]
-    },
-    {
-      "name": "Android Browser",
-      "versions": [
-        {
-          "version": 2.1,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 2.2,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 2.3,
-          "percentage": 0.11,
-          "current": false
-        },
-        {
-          "version": 3,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 4,
-          "percentage": 0.34,
-          "current": false
-        },
-        {
-          "version": 4.1,
-          "percentage": 1.18,
-          "current": false
-        },
-        {
-          "version": 4.3,
-          "percentage": 2.57,
-          "current": false
-        },
-        {
-          "version": 4.4,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 4.4,
-          "percentage": 2.26,
-          "current": false
-        },
-        {
-          "version": 44,
-          "percentage": 0,
-          "current": true
-        }
-      ]
-    },
-    {
-      "name": "Blackberry Browser",
-      "versions": [
-        {
-          "version": 7,
-          "percentage": 0.11,
-          "current": false
-        },
-        {
-          "version": 10,
-          "percentage": 0,
-          "current": true
-        }
-      ]
-    },
-    {
-      "name": "Opera Mobile",
-      "versions": [
-        {
-          "version": 10,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 11,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 11.1,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 11.5,
-          "percentage": 0,
-          "current": false
-        },
-        {
-          "version": 12,
-          "percentage": 0.02,
-          "current": false
-        },
-        {
-          "version": 12.1,
-          "percentage": 0.03,
-          "current": false
-        },
-        {
-          "version": 30,
-          "percentage": 0.48,
-          "current": true
-        }
-      ]
-    },
-    {
-      "name": "Chrome for Android",
-      "versions": [
-        {
-          "version": 44,
-          "percentage": 15.76,
-          "current": true
-        }
-      ]
-    },
-    {
-      "name": "Firefox for Android",
-      "versions": [
-        {
-          "version": 40,
-          "percentage": 0.15,
-          "current": true
-        }
-      ]
-    },
-    {
-      "name": "IE Mobile",
-      "versions": [
-        {
-          "version": 10,
-          "percentage": 0.18,
-          "current": false
-        },
-        {
-          "version": 11,
-          "percentage": 0.73,
-          "current": true
-        }
-      ]
-    },
-    {
-      "name": "UC Browser for Android",
-      "versions": [
-        {
-          "version": 9.9,
-          "percentage": 7.1,
-          "current": true
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "name": "IE",
+    "versions": [
+      {
+        "label": 5.5,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 6,
+        "percentage": 0.07,
+        "current": false
+      },
+      {
+        "label": 7,
+        "percentage": 0.05,
+        "current": false
+      },
+      {
+        "label": 8,
+        "percentage": 1.45,
+        "current": false
+      },
+      {
+        "label": 9,
+        "percentage": 1.14,
+        "current": false
+      },
+      {
+        "label": 10,
+        "percentage": 1.03,
+        "current": false
+      },
+      {
+        "label": 11,
+        "percentage": 6.17,
+        "current": true
+      }
+    ],
+    "desktop": true
+  },
+  {
+    "name": "Edge",
+    "versions": [
+      {
+        "label": 12,
+        "percentage": 0.45,
+        "current": true
+      },
+      {
+        "label": 13,
+        "percentage": 0,
+        "current": false
+      }
+    ],
+    "desktop": true
+  },
+  {
+    "name": "Firefox",
+    "versions": [
+      {
+        "label": 2,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 3,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 3.5,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 3.6,
+        "percentage": 0.04,
+        "current": false
+      },
+      {
+        "label": 4,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 5,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 6,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 7,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 8,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 9,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 10,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 11,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 12,
+        "percentage": 0.04,
+        "current": false
+      },
+      {
+        "label": 13,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 14,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 15,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 16,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 17,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 18,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 19,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 20,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 21,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 22,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 23,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 24,
+        "percentage": 0.04,
+        "current": false
+      },
+      {
+        "label": 25,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 26,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 27,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 28,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 29,
+        "percentage": 0.04,
+        "current": false
+      },
+      {
+        "label": 30,
+        "percentage": 0.09,
+        "current": false
+      },
+      {
+        "label": 31,
+        "percentage": 0.13,
+        "current": false
+      },
+      {
+        "label": 32,
+        "percentage": 0.06,
+        "current": false
+      },
+      {
+        "label": 33,
+        "percentage": 0.07,
+        "current": false
+      },
+      {
+        "label": 34,
+        "percentage": 0.08,
+        "current": false
+      },
+      {
+        "label": 35,
+        "percentage": 0.11,
+        "current": false
+      },
+      {
+        "label": 36,
+        "percentage": 0.11,
+        "current": false
+      },
+      {
+        "label": 37,
+        "percentage": 0.17,
+        "current": false
+      },
+      {
+        "label": 38,
+        "percentage": 0.51,
+        "current": false
+      },
+      {
+        "label": 39,
+        "percentage": 4,
+        "current": false
+      },
+      {
+        "label": 40,
+        "percentage": 3.31,
+        "current": true
+      },
+      {
+        "label": 41,
+        "percentage": 0.13,
+        "current": false
+      },
+      {
+        "label": 42,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 43,
+        "percentage": 0,
+        "current": false
+      }
+    ],
+    "desktop": true
+  },
+  {
+    "name": "Chrome",
+    "versions": [
+      {
+        "label": 4,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 5,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 6,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 7,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 8,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 9,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 10,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 11,
+        "percentage": 0.06,
+        "current": false
+      },
+      {
+        "label": 12,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 13,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 14,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 15,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 16,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 17,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 18,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 19,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 20,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 21,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 22,
+        "percentage": 0.07,
+        "current": false
+      },
+      {
+        "label": 23,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 24,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 25,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 26,
+        "percentage": 0.04,
+        "current": false
+      },
+      {
+        "label": 27,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 28,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 29,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 30,
+        "percentage": 0.04,
+        "current": false
+      },
+      {
+        "label": 31,
+        "percentage": 0.83,
+        "current": false
+      },
+      {
+        "label": 32,
+        "percentage": 0.05,
+        "current": false
+      },
+      {
+        "label": 33,
+        "percentage": 0.13,
+        "current": false
+      },
+      {
+        "label": 34,
+        "percentage": 0.19,
+        "current": false
+      },
+      {
+        "label": 35,
+        "percentage": 0.19,
+        "current": false
+      },
+      {
+        "label": 36,
+        "percentage": 0.16,
+        "current": false
+      },
+      {
+        "label": 37,
+        "percentage": 0.19,
+        "current": false
+      },
+      {
+        "label": 38,
+        "percentage": 0.14,
+        "current": false
+      },
+      {
+        "label": 39,
+        "percentage": 0.28,
+        "current": false
+      },
+      {
+        "label": 40,
+        "percentage": 0.29,
+        "current": false
+      },
+      {
+        "label": 41,
+        "percentage": 0.27,
+        "current": false
+      },
+      {
+        "label": 42,
+        "percentage": 0.5,
+        "current": false
+      },
+      {
+        "label": 43,
+        "percentage": 1.66,
+        "current": false
+      },
+      {
+        "label": 44,
+        "percentage": 24.57,
+        "current": false
+      },
+      {
+        "label": 45,
+        "percentage": 0.15,
+        "current": true
+      },
+      {
+        "label": 46,
+        "percentage": 0.17,
+        "current": false
+      },
+      {
+        "label": 47,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 48,
+        "percentage": 0,
+        "current": false
+      }
+    ],
+    "desktop": true
+  },
+  {
+    "name": "Safari",
+    "versions": [
+      {
+        "label": 3.1,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 3.2,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 4,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 5,
+        "percentage": 0.07,
+        "current": false
+      },
+      {
+        "label": 5.1,
+        "percentage": 0.18,
+        "current": false
+      },
+      {
+        "label": 6,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 6.1,
+        "percentage": 0.15,
+        "current": false
+      },
+      {
+        "label": 7,
+        "percentage": 0.1,
+        "current": false
+      },
+      {
+        "label": 7.1,
+        "percentage": 0.36,
+        "current": false
+      },
+      {
+        "label": 8,
+        "percentage": 1.27,
+        "current": true
+      },
+      {
+        "label": 9,
+        "percentage": 0.02,
+        "current": false
+      }
+    ],
+    "desktop": true
+  },
+  {
+    "name": "Opera",
+    "versions": [
+      {
+        "label": 9,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 9.6,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 10.1,
+        "percentage": 0.04,
+        "current": false
+      },
+      {
+        "label": 10.5,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 10.6,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 11,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 11.1,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 11.5,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 11.6,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 12,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 12.1,
+        "percentage": 0.13,
+        "current": false
+      },
+      {
+        "label": 15,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 16,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 17,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 18,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 19,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 20,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 21,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 22,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 23,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 24,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 25,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 26,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 27,
+        "percentage": 0.01,
+        "current": false
+      },
+      {
+        "label": 28,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 29,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 30,
+        "percentage": 0.18,
+        "current": false
+      },
+      {
+        "label": 31,
+        "percentage": 0.5,
+        "current": true
+      },
+      {
+        "label": 32,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 33,
+        "percentage": 0,
+        "current": false
+      }
+    ],
+    "desktop": true
+  },
+  {
+    "name": "iOS Safari",
+    "versions": [
+      {
+        "label": 3.2,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 4.1,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 4.3,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 5.1,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 6.1,
+        "percentage": 0.04,
+        "current": false
+      },
+      {
+        "label": 7.1,
+        "percentage": 0.65,
+        "current": false
+      },
+      {
+        "label": 8,
+        "percentage": 0.09,
+        "current": false
+      },
+      {
+        "label": 8.4,
+        "percentage": 6.99,
+        "current": true
+      },
+      {
+        "label": 9,
+        "percentage": 0.05,
+        "current": false
+      }
+    ],
+    "desktop": false
+  },
+  {
+    "name": "Opera Mini",
+    "versions": [
+      {
+        "label": 8,
+        "percentage": 5.37,
+        "current": true
+      }
+    ],
+    "desktop": false
+  },
+  {
+    "name": "Android Browser",
+    "versions": [
+      {
+        "label": 2.1,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 2.2,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 2.3,
+        "percentage": 0.11,
+        "current": false
+      },
+      {
+        "label": 3,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 4,
+        "percentage": 0.34,
+        "current": false
+      },
+      {
+        "label": 4.1,
+        "percentage": 1.18,
+        "current": false
+      },
+      {
+        "label": 4.3,
+        "percentage": 2.57,
+        "current": false
+      },
+      {
+        "label": 4.4,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 4.4,
+        "percentage": 2.26,
+        "current": false
+      },
+      {
+        "label": 44,
+        "percentage": 0,
+        "current": true
+      }
+    ],
+    "desktop": false
+  },
+  {
+    "name": "Blackberry Browser",
+    "versions": [
+      {
+        "label": 7,
+        "percentage": 0.11,
+        "current": false
+      },
+      {
+        "label": 10,
+        "percentage": 0,
+        "current": true
+      }
+    ],
+    "desktop": false
+  },
+  {
+    "name": "Opera Mobile",
+    "versions": [
+      {
+        "label": 10,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 11,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 11.1,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 11.5,
+        "percentage": 0,
+        "current": false
+      },
+      {
+        "label": 12,
+        "percentage": 0.02,
+        "current": false
+      },
+      {
+        "label": 12.1,
+        "percentage": 0.03,
+        "current": false
+      },
+      {
+        "label": 30,
+        "percentage": 0.48,
+        "current": true
+      }
+    ],
+    "desktop": false
+  },
+  {
+    "name": "Chrome for Android",
+    "versions": [
+      {
+        "label": 44,
+        "percentage": 15.76,
+        "current": true
+      }
+    ],
+    "desktop": false
+  },
+  {
+    "name": "Firefox for Android",
+    "versions": [
+      {
+        "label": 40,
+        "percentage": 0.15,
+        "current": true
+      }
+    ],
+    "desktop": false
+  },
+  {
+    "name": "IE Mobile",
+    "versions": [
+      {
+        "label": 10,
+        "percentage": 0.18,
+        "current": false
+      },
+      {
+        "label": 11,
+        "percentage": 0.73,
+        "current": true
+      }
+    ],
+    "desktop": false
+  },
+  {
+    "name": "UC Browser for Android",
+    "versions": [
+      {
+        "label": 9.9,
+        "percentage": 7.1,
+        "current": true
+      }
+    ],
+    "desktop": false
+  }
+]

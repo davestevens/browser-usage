@@ -18,7 +18,7 @@ request(url, (_error, _response, html) ->
       versions: _.map($browser.find(".stat-cell"), (stat) ->
         $stat = $(stat)
         {
-          version: parseFloat($stat.find(".stat-cell__label").text())
+          label: parseFloat($stat.find(".stat-cell__label").text())
           percentage: parseFloat($stat.find(".stat-cell__percentage").text())
           current: $stat.hasClass("current")
         }
@@ -26,16 +26,13 @@ request(url, (_error, _response, html) ->
     }
   )
 
-  # Split browsers based on mobile/desktop
-  data =
-    desktop: _.filter(browsers, (browser) ->
-      _.contains(desktop_browsers, browser.name)
-    )
-    mobile: _.filter(browsers, (browser) ->
-      !_.contains(desktop_browsers, browser.name)
-    )
+  # Include flag for Desktop
+  browsers = _.map(browsers, (browser) ->
+    browser.desktop = _.contains(desktop_browsers, browser.name)
+    browser
+  )
   # Write to file
-  fs.writeFile(output_filename, JSON.stringify(data, null, "  "), (error) ->
+  fs.writeFile(output_filename, JSON.stringify(browsers, null, "  "), (error) ->
     console.log error || "Data extracted and saved to #{output_filename}"
   )
 )
