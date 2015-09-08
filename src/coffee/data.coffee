@@ -6,17 +6,19 @@ class Data
     @data = options.data || []
     @threshold = options.threshold || 1
 
-    @_format()
+    @data = @_format()
 
   all: -> @data
 
   _format: ->
-    @data = _.map(@data, (datum) =>
-      datum.versions = @_combine_versions(datum.versions)
-      datum.percentage = @_total_percentage(datum.versions)
-      datum
-    )
-    @data = _.sortBy(@data, (datum) -> -parseFloat(datum.percentage))
+    _.chain(@data)
+      .map((datum) =>
+        datum.versions = @_combine_versions(datum.versions)
+        datum.percentage = @_total_percentage(datum.versions)
+        datum
+      )
+      .sortBy((datum) -> -parseFloat(datum.percentage))
+      .value()
 
   _combine_versions: (versions) ->
     combined_versions = []
