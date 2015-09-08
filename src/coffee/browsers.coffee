@@ -1,5 +1,6 @@
 _ = require("underscore")
 Colours = require("./colours")
+bootstrap = require("bootstrap-sass")
 
 class Browsers
   constructor: (options = {}) ->
@@ -8,27 +9,36 @@ class Browsers
     @colours = options.colours || new Colours(count: @browsers.length)
 
   render: ->
-    @$el.html($("<ul/>", class: "list-group")
-      .append(_.map(@browsers, @_render_browser))
-    )
+    @$el.html(_.map(@browsers, @_render_browser))
 
   _render_browser: (browser, index) =>
-    $("<li/>",
-      class: "list-group-item",
-      style: "background-color: #{@_colour(index)}"
-    )
+    $("<div/>", class: "browser")
       .append(
-        @_render_browser_name(browser),
-        @_render_versions(browser.versions)
+        @_render_browser_total(browser, index),
+        @_render_versions(browser.versions, index)
       )
 
   _colour: (index) -> @colours.create(index)
 
-  _render_browser_name: (browser) ->
-    $("<h4/>", text: browser.name).append(@_render_total(browser.percentage))
+  _render_browser_total: (browser, index) ->
+    $("<div/>",
+      class: "browser__total"
+      style: "background-color: #{@_colour(index)}"
+    )
+      .on("click", ->
+        $(this).next(".collapse").collapse("toggle")
+      )
+      .append(@_render_browser_name(browser))
 
-  _render_versions: (versions) ->
-    $("<ul/>", class: "list-group")
+  _render_browser_name: (browser) ->
+    $("<h4/>", text: browser.name)
+      .append(@_render_total(browser.percentage))
+
+  _render_versions: (versions, index) ->
+    $("<div/>",
+      class: "collapse"
+      id: "browser-#{index}"
+    )
       .append(_.map(versions, @_render_version))
 
   _render_version: (version) =>

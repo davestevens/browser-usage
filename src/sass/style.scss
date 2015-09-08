@@ -14,8 +14,8 @@ body {
   }
 
   &--total {
-    background-color: $brand-danger;
     float: right;
+    background-color: $gray-dark;
   }
 }
 
@@ -26,6 +26,13 @@ body {
 
 .browsers {
   margin-top: 20px;
+}
+
+.browser {
+  &__total {
+    padding: 10px 15px;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: $screen-md) {
