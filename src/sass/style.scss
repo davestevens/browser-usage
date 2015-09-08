@@ -5,6 +5,8 @@ body {
 }
 
 .badge {
+  float: right;
+
   &--current {
     background-color: $brand-primary;
   }
@@ -14,7 +16,6 @@ body {
   }
 
   &--total {
-    float: right;
     background-color: $gray-dark;
   }
 }
@@ -33,12 +34,22 @@ body {
     padding: 10px 15px;
     cursor: pointer;
   }
+
+  &__version {
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid $gray-lighter;
+    margin-bottom: -1px;
+    margin-right: 1px;
+    font-weight: normal;
+  }
 }
 
 @media (min-width: $screen-md) {
   .browsers {
     max-height: 600px;
-    overflow: scroll;
+    overflow: auto;
     margin-top: 0;
   }
 }

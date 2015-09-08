@@ -15,7 +15,7 @@ class Browsers
     $("<div/>", class: "browser")
       .append(
         @_render_browser_total(browser, index),
-        @_render_versions(browser.versions, index)
+        @_render_versions(browser.versions)
       )
 
   _colour: (index) -> @colours.create(index)
@@ -34,16 +34,13 @@ class Browsers
     $("<h4/>", text: browser.name)
       .append(@_render_total(browser.percentage))
 
-  _render_versions: (versions, index) ->
-    $("<div/>",
-      class: "collapse"
-      id: "browser-#{index}"
-    )
+  _render_versions: (versions) ->
+    $("<div/>", class: "collapse")
       .append(_.map(versions, @_render_version))
 
   _render_version: (version) =>
     $("<li/>",
-      class: "list-group-item js-browser-version",
+      class: "browser__version"
       text: version.label
     )
       .append(@_render_usage(version))
