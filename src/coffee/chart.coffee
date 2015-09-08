@@ -12,7 +12,7 @@ class Chart
   render: ->
     context = @$el[0].getContext("2d")
     @chart = new ChartJS(context).Pie(@_build_data(), {
-      segmentStrokeWidth: 0.5
+      segmentStrokeWidth: 0.1
       animateScale: true
       animateRotate: true
     })
@@ -25,7 +25,8 @@ class Chart
 
     value: (100 - unknown).toFixed(@precision)
     label: "Unknown Browser"
-    color: "#000000"
+    color: "rgba(0, 0, 0, 0.75)"
+    highlight: "rgba(0, 0, 0, 0.5)"
 
   _build_data: ->
     browsers = []
