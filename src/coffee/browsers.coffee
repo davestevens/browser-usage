@@ -1,10 +1,11 @@
 _ = require("underscore")
-colours = require("./colours")
+Colours = require("./colours")
 
 class Browsers
   constructor: (options = {}) ->
     @$el = options.$el
     @browsers = options.browsers || []
+    @colours = options.colours || new Colours(count: @browsers.length)
 
   render: ->
     @$el.html($("<ul/>", class: "list-group")
@@ -14,12 +15,14 @@ class Browsers
   _render_browser: (browser, index) =>
     $("<li/>",
       class: "list-group-item",
-      style: "background-color: #{colours.get(index)}"
+      style: "background-color: #{@_colour(index)}"
     )
       .append(
         @_render_browser_name(browser),
         @_render_versions(browser.versions)
       )
+
+  _colour: (index) -> @colours.create(index)
 
   _render_browser_name: (browser) ->
     $("<h4/>", text: browser.name).append(@_render_total(browser.percentage))

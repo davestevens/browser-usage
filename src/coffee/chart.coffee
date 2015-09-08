@@ -1,12 +1,13 @@
 ChartJS = require("chart.js")
 _ = require("underscore")
-colours = require("./colours")
+Colours = require("./colours")
 
 class Chart
   constructor: (options = {}) ->
     @$el = options.$el
     @browsers = options.browsers || []
     @precision = options.precision || 2
+    @colours = options.colours || new Colours(count: @browsers.length)
 
   render: ->
     context = @$el[0].getContext("2d")
@@ -33,7 +34,7 @@ class Chart
         browsers.push(
           value: version.percentage.toFixed(@precision)
           label: "#{browser.name} - #{version.label}"
-          color: colours.get(index)
+          color: @colours.create(index)
         )
       )
     )
