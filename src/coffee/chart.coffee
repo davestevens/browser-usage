@@ -35,6 +35,7 @@ class Chart
           value: version.percentage.toFixed(@precision)
           label: "#{browser.name} - #{version.label}"
           color: @colours.create(index)
+          highlight: @colours.create(index, alpha: 0.75)
         )
       )
     )

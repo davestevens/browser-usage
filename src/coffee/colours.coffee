@@ -4,8 +4,8 @@ class Colours
     @saturation = options.saturation || 70
     @lightness = options.lightness || 50
 
-  create: (index, count = @count) ->
+  create: (index, { count = @count, alpha = 1 } = {}) ->
     hue = index * (360 / count)
-    "hsl(#{hue}, #{@saturation}%, #{@lightness}%)"
+    "hsla(#{hue}, #{@saturation}%, #{@lightness}%, #{alpha})"
 
 module.exports = Colours
