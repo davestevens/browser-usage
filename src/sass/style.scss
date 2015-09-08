@@ -23,3 +23,15 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+.browsers {
+  margin-top: 20px;
+}
+
+@media (min-width: $screen-md) {
+  .browsers {
+    max-height: 600px;
+    overflow: scroll;
+    margin-top: 0;
+  }
+}
