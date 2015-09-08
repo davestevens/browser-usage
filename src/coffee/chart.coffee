@@ -33,7 +33,7 @@ class Chart
       _.each(browser.versions, (version) =>
         browsers.push(
           value: version.percentage.toFixed(@precision)
-          label: "#{browser.name} - #{version.label}"
+          label: "#{browser.name} (#{version.label})"
           color: @colours.create(index)
           highlight: @colours.create(index, alpha: 0.75)
         )
