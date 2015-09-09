@@ -20,6 +20,11 @@ body {
   }
 }
 
+.chart-container {
+  width: 100%;
+  height: calc(100vh - #{$navbar-height + 20});
+}
+
 .chart {
   display: block;
   margin: 0 auto;
@@ -27,6 +32,7 @@ body {
 
 .browsers {
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .browser {
@@ -47,9 +53,14 @@ body {
 }
 
 @media (min-width: $screen-md) {
+  .chart-container {
+    height: 600px;
+  }
+
   .browsers {
     max-height: 600px;
     overflow: auto;
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
