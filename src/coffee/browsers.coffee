@@ -46,7 +46,7 @@ class Browsers
       .append(@_render_usage(version))
 
   _render_usage: (version) ->
-    color = if version.current then "current" else "default"
+    color = if version.index == 0 then "current" else "default"
     $("<span/>",
       class: "badge badge--#{color}",
       text: @_display_percentage(version.percentage)

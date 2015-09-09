@@ -24,7 +24,7 @@ class Data
     combined_versions = []
     combined_version = new CombinedVersion()
     _.each(versions, (version) =>
-      if (version.percentage < @threshold) && !version.current
+      if (version.percentage < @threshold) && version.index != 0
         combined_version.add(version)
       else
         combined_versions.push(combined_version.build())

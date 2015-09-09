@@ -7,6 +7,16 @@ url = "http://caniuse.com/usage-table"
 desktop_browsers = ["IE", "Edge", "Firefox", "Chrome", "Safari", "Opera"]
 output_filename = "src/coffee/data.json"
 
+calculate_index = ($stat) ->
+  if $stat.hasClass("current")
+    0
+  else if $stat.hasClass("past")
+    -($stat.nextAll(".past").length + 1)
+  else if $stat.hasClass("future")
+    $stat.prevAll(".future").length + 1
+  else
+    "?"
+
 request(url, (_error, _response, html) ->
   $ = cheerio.load(html)
 
@@ -20,7 +30,7 @@ request(url, (_error, _response, html) ->
         {
           label: parseFloat($stat.find(".stat-cell__label").text())
           percentage: parseFloat($stat.find(".stat-cell__percentage").text())
-          current: $stat.hasClass("current")
+          index: calculate_index($stat)
         }
       )
     }

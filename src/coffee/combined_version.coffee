@@ -25,7 +25,6 @@ class CombinedVersion
   _percentage: ->
     _.reduce(@versions, ((memo, version) -> memo + version.percentage), 0)
 
-  _current: ->
-    _.every(@versions, (version) -> version.current)
+  _current: -> _.every(@versions, (version) -> version.index == 0)
 
 module.exports = CombinedVersion
