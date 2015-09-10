@@ -31,7 +31,7 @@ class Data
         combined_versions.push(version)
     )
     combined_versions.push(combined_version.build())
-    _.pick(combined_versions, _.identity)
+    _.filter(combined_versions, (version) -> !!version)
 
   _total_percentage: (versions) ->
     _.chain(versions)
