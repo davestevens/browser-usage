@@ -50,6 +50,11 @@ body {
     margin-right: 1px;
     font-weight: normal;
   }
+
+  &__checkbox {
+    float: left;
+    margin-right: 10px !important;
+  }
 }
 
 @media (min-width: $screen-md) {
