@@ -5,6 +5,7 @@ Colours = require("./colours")
 class Chart
   constructor: (options = {}) ->
     @$el = options.$el
+    @$container = @$el.parent()
     @browsers = options.browsers || []
     @precision = options.precision || 2
     @colours = options.colours || new Colours(count: @browsers.length)
@@ -17,11 +18,12 @@ class Chart
   render: ->
     context = @$el[0].getContext("2d")
     @chart = new ChartJS(context).Pie(@_build_data(), {
+      responsive: true
+      maintainAspectRatio: false
       segmentStrokeWidth: 0.1
       animateScale: true
       animateRotate: true
     })
-    window.chart = @chart
 
   _disable_data_item: (_event, data) =>
     browser = @browsers[data.browser]
