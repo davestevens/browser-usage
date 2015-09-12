@@ -38,7 +38,7 @@ class Browsers
 
   _render_version: (version, index) =>
     $("<label/>",
-      class: "browser__version version-#{index}"
+      class: "browser__version"
       text: version.label
       data: { index: index }
     )
