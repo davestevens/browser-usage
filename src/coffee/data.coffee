@@ -1,10 +1,13 @@
 _ = require("underscore")
+Colours = require("./colours")
+Browser = require("./browser")
 CombinedVersion = require("./combined_version")
 
 class Data
   constructor: (options = {}) ->
     @data = options.data || []
     @threshold = options.threshold || 1
+    @colours = new Colours(count: @data.length)
 
     @data = @_format()
 
@@ -18,6 +21,15 @@ class Data
         datum
       )
       .sortBy((datum) -> -parseFloat(datum.percentage))
+      .map((datum, index) =>
+        new Browser(
+          name: datum.name
+          value: datum.percentage
+          index: index
+          colours: @colours
+          versions: datum.versions
+        )
+      )
       .value()
 
   _combine_versions: (versions) ->
