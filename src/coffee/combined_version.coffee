@@ -11,7 +11,7 @@ class CombinedVersion
     version = {
       label: @_label()
       percentage: @_percentage()
-      current: @_current()
+      index: @_indexes()
     }
     @versions = []
     version
@@ -25,6 +25,6 @@ class CombinedVersion
   _percentage: ->
     _.reduce(@versions, ((memo, version) -> memo + version.percentage), 0)
 
-  _current: -> _.every(@versions, (version) -> version.index == 0)
+  _indexes: -> _.pluck(@versions, "index")
 
 module.exports = CombinedVersion
