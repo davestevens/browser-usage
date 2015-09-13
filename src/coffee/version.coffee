@@ -42,7 +42,7 @@ class Version
   associate_to_chart: (index) -> @chart_index = index
 
   to_chart_data: ->
-    value: @value
+    value: @value.toFixed(2)
     label: "#{@browser.name} - #{@label}"
     color: @browser.colour()
     highlight: @browser.colour(0.75)
