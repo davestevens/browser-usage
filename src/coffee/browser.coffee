@@ -33,7 +33,7 @@ class Browser
     @_bind_events()
     @$el
 
-  colour: (alpha = 1) -> @colours.create(@index, alpha)
+  colour: (alpha = 1) -> @colours.create(@index, alpha: alpha)
 
   enable: ->
     _.invoke(@versions, "enable")
