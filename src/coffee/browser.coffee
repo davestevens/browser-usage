@@ -10,6 +10,7 @@ template = '
        style="background-color: <%= background_color %>">
     <h4>
       <%= name %>
+      <i class="browser__expand"></i>
       <span class="badge badge--total"><%= total %>%</span>
     </h4>
   </div>
@@ -62,6 +63,15 @@ class Browser
   _bind_events: ->
     @$el.on("click", ".js-browser-total", @_toggle)
 
-  _toggle: => @$versions.collapse("toggle")
+  _toggle: =>
+    if @$el.hasClass("expanded") then @_collapse() else @_expand()
+
+  _collapse: ->
+    @$versions.collapse("hide")
+    @$el.removeClass("expanded")
+
+  _expand: ->
+    @$versions.collapse("show")
+    @$el.addClass("expanded")
 
 module.exports = Browser

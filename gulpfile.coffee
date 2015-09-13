@@ -45,6 +45,8 @@ gulp.task("scripts", ->
 gulp.task("copy:fonts", ->
   gulp.src("src/fonts/**/*")
     .pipe(gulp.dest("web/fonts/"))
+  gulp.src("node_modules/bootstrap-sass/assets/fonts/bootstrap/*", { base: "node_modules/bootstrap-sass/assets/fonts/" })
+    .pipe(gulp.dest("web/fonts/"))
 )
 # Copy any image files
 gulp.task("copy:images", ->

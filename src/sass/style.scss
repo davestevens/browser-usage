@@ -41,6 +41,20 @@ body {
     cursor: pointer;
   }
 
+  &__expand {
+    @extend .glyphicon;
+    @extend .glyphicon-menu-right;
+
+    float: right;
+    margin-left: 10px;
+  }
+
+  &.expanded {
+    .browser__expand {
+      @extend .glyphicon-menu-down;
+    }
+  }
+
   &__version {
     display: block;
     padding: 10px 15px;
