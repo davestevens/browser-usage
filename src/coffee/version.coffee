@@ -30,16 +30,16 @@ class Version
   disable: ->
     @$el.find(".js-browser-checkbox").prop("checked", false)
     @active = false
-    @chart_reference.value = 0
+    $(window).trigger("chart:update:value", index: @chart_index, value: 0)
     $(window).trigger("chart:update:unsupported", +@value)
 
   enable: ->
     @$el.find(".js-browser-checkbox").prop("checked", true)
     @active = true
-    @chart_reference.value = @value
+    $(window).trigger("chart:update:value", index: @chart_index, value: @value)
     $(window).trigger("chart:update:unsupported", -@value)
 
-  associate_to_chart: (reference) -> @chart_reference = reference
+  associate_to_chart: (index) -> @chart_index = index
 
   to_chart_data: ->
     value: @value

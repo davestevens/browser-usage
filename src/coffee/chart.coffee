@@ -12,24 +12,23 @@ class Chart
 
   _bind_events: ->
     $(window).on("chart:update:display", => @chart.update())
+    $(window).on("chart:update:value", @_update_value)
     $(window).on("chart:update:unsupported", @_update_unsupported)
 
   render: ->
-    # TODO: Alternative way to this to make first render smoother?
-    @chart = @_create(@$el[0].getContext("2d"))
+    data = []
     _.each(@browsers, (browser) =>
       _.each(browser.versions, (version) =>
-        @chart.addData(version.to_chart_data())
-        segment = @chart.segments[@chart.segments.length - 1]
-        version.associate_to_chart(segment)
+        data.push(version.to_chart_data())
+        version.associate_to_chart(data.length - 1)
       )
     )
+    @chart = @_create(@$el[0].getContext("2d"), data)
     @_include_unknown()
     @_include_unsupported()
-    @chart.update()
 
-  _create: (context) ->
-    new ChartJS(context).Pie([], {
+  _create: (context, data = []) ->
+    new ChartJS(context).Pie(data, {
       responsive: true
       maintainAspectRatio: false
       segmentStrokeWidth: 0.1
@@ -58,6 +57,9 @@ class Chart
       highlight: "rgba(0, 0, 0, 0.25)"
     )
     @unsupported = @chart.segments[@chart.segments.length - 1]
+
+  _update_value: (_event, { index, value }) =>
+    @chart.segments[index].value = value
 
   _update_unsupported: (_event, value) => @unsupported.value += value
 
