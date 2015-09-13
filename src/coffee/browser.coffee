@@ -43,6 +43,10 @@ class Browser
     _.invoke(@versions, "disable")
     $(window).trigger("chart:update:display")
 
+  filter: (callback) ->
+    _.invoke(@versions, "filter", callback)
+    $(window).trigger("chart:update:display")
+
   _build_versions: (versions) ->
     _.map(versions, (version) =>
       new Version(
