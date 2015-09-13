@@ -16,7 +16,7 @@ class Version
     @browser = options.browser
     @label = options.label
     @value = options.value
-    @index = options.index
+    @indexes = [].concat(options.index)
     @template = _.template(template)
 
     @active = true
@@ -55,7 +55,7 @@ class Version
   _render_template: ->
     @template(
       label: @label
-      usage_class: if @index == 0 then "current" else "default"
+      usage_class: if _.contains(@indexes, 0) then "current" else "default"
       value: @value.toFixed(2)
     )
 

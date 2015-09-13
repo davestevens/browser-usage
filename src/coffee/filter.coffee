@@ -2,9 +2,16 @@ $ = require("jquery")
 _ = require("underscore")
 filters = [
   { label: "All", callback: (_version) -> true }
-  { label: "Latest", callback: (version) -> version.index == 0 }
-  { label: "Latest -1", callback: (version) -> version.index >= -1 }
-  { label: "Latest -2", callback: (version) -> version.index >= -2 }
+  { label: "Latest", callback: (version) -> _.contains(version.indexes, 0) }
+  {
+    label: "Last two versions"
+    callback: (version) -> _.intersection(version.indexes, [0..-1]).length
+  }
+  {
+    label: "Last three versions"
+    callback: (version) -> _.intersection(version.indexes, [0..-2]).length
+  }
+  { label: "Greater than 5%", callback: (version) -> version.value > 5 }
 ]
 
 template = '
