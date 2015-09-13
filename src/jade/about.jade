@@ -1,0 +1,25 @@
+- var page = "about"
+
+doctype html
+html(lang='en')
+  include ./shared/_html_header
+  body
+    include ./shared/_navigation
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          p
+            | Interactive current Browser Usage data for investigating the
+            | browsers we should be supporting.
+            | You are able to filter the list of browsers by version and see
+            | the percentage of internet users who this targets.
+          p
+            | Use the predefined filters in the drop down or expand each browser
+            | and select specific versions of the browser.
+          p.text-muted
+            | Old versions which have a less than 1% usage are collapsed into a
+            | single option in the list of versions.
+          p &nbsp;
+          p
+            | Browser usage data is taken from 
+            a(href="http://caniuse.com/usage-table" target="_blank") caniuse.com
