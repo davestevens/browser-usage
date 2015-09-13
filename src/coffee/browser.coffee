@@ -4,6 +4,18 @@ bootstrap = require("bootstrap-sass")
 Colours = require("./colours")
 Version = require("./version")
 
+template = '
+<div class="browser">
+  <div class="browser__total js-browser-total"
+       style="background-color: <%= background_color %>">
+    <h4>
+      <%= name %>
+      <span class="badge badge--total"><%= total %>%</span>
+    </h4>
+  </div>
+  <div class="js-browser-versions collapse"></div>
+</div>
+'
 class Browser
   constructor: (options = {}) ->
     @name = options.name || "Browser"
@@ -11,13 +23,14 @@ class Browser
     @value = options.value
     @colours = options.colours || new Colours(count: 12)
     @versions = @_build_versions(options.versions || [])
+    @template = _.template(template)
 
   render: ->
-    $("<div/>", class: "browser")
-      .append(
-        @_render_browser_total()
-        @_render_versions()
-    )
+    @$el = $(@_render_template())
+    @$versions = @$el.find(".js-browser-versions")
+    @$versions.html(_.invoke(@versions, "render"))
+    @_bind_events()
+    @$el
 
   colour: (alpha = 1) -> @colours.create(@index, alpha)
 
@@ -29,29 +42,6 @@ class Browser
     _.invoke(@versions, "disable")
     $(window).trigger("chart:update:display")
 
-  _render_browser_total: ->
-    $("<div/>",
-      class: "browser__total"
-      style: "background-color: #{@colour()}"
-    )
-      .on("click", -> $(this).next(".collapse").collapse("toggle"))
-      .append(@_render_browser_name())
-
-  _render_versions: ->
-    $("<div/>", class: "collapse")
-      .append(_.invoke(@versions, "render"))
-
-  _render_browser_name: ->
-    $("<h4/>", text: @name).append(@_render_total())
-
-  _render_total: ->
-    $("<span/>",
-      class: "badge badge--total",
-      text: @_display_percentage(@value)
-    )
-
-  _display_percentage: (value) -> "#{value.toFixed(2)}%"
-
   _build_versions: (versions) ->
     _.map(versions, (version) =>
       new Version(
@@ -61,5 +51,17 @@ class Browser
         index: version.index
       )
     )
+
+  _render_template: ->
+    @template(
+      name: @name
+      background_color: @colour()
+      total: @value.toFixed(2)
+    )
+
+  _bind_events: ->
+    @$el.on("click", ".js-browser-total", @_toggle)
+
+  _toggle: => @$versions.collapse("toggle")
 
 module.exports = Browser
