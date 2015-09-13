@@ -3,6 +3,10 @@ Data = require("./data.coffee")
 data = new Data(data: require("./data.json"), threshold: 1)
 
 $(document).ready(->
+  Filter = require("./filter")
+  $filter = $(".js-filter")
+  new Filter($el: $filter).render()
+
   Browsers = require("./browsers")
   $browsers = $(".js-browsers")
   new Browsers($el: $browsers, browsers: data.all()).render()
